@@ -46,7 +46,7 @@ Medium: 11px
 */
 
 /******************************/
-/* RESET */
+/* -- RESET -- */
 /******************************/
 * {
   margin: 0;
@@ -55,7 +55,7 @@ Medium: 11px
 }
 
 /******************************/
-/* GENERAL */
+/* -- GENERAL -- */
 /******************************/
 html {
   font-size: 62.5%;
@@ -68,14 +68,14 @@ body {
 }
 
 /******************************/
-/* GENERIC COMPONENTS */
+/* -- GENERIC COMPONENTS -- */
 /******************************/
 .margin-right-sm {
   margin-right: 1.6rem;
 }
 
 /******************************/
-/* HEADER */
+/* -- HEADER -- */
 /******************************/
 .header {
   display: flex;
@@ -88,6 +88,43 @@ body {
 }
 .logo {
   height: 2.2rem;
+}
+
+/******************************/
+/* -- NAVIGATION -- */
+/******************************/
+.main-nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 3.2rem;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 500;
+
+  transition: all 0.3s;
+}
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+.main-nav-link.nav-cta:link,
+.nav-cta:visited {
+  display: inline-block;
+  padding: 1.2rem 2.4rem;
+  border-radius: 0.9rem;
+  color: #fff;
+  background-color: #e67e22;
+}
+.main-nav-link.nav-cta:hover,
+.nav-cta:active {
+  background-color: #cf711f;
 }
 
 /******************************/
